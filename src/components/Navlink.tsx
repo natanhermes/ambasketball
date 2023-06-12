@@ -10,7 +10,7 @@ export function NavLink({ path, label }: NavLinkProps) {
     <li>
       <Link
         href={path}
-        className={`focus:text-primary text-icons py-4 px-3 inline-block`}
+        className={`focus:text-primary text-icons py-4 px-3 inline-block hover:text-primary`}
       >
         {label}
       </Link>

@@ -2,20 +2,21 @@
 import React, { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import { NavLinkList } from './NavlinkList';
+import { RedirectButton } from './RedirectButton';
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="bg-black w-full">
-      <div className="bg-black flex items-center font-medium justify-between">
+    <nav className="bg-transparent w-full">
+      <div className="bg-transparent flex items-center font-medium justify-between">
         <div
           id="logo-container"
-          className="bg-black z-50 md:w-auto w-full flex justify-between"
+          className="bg-transparent z-50 md:w-auto w-full flex justify-between"
         >
           <img
             src="/images/ambasketball-logotipo.svg"
-            className="md:cursor-pointer h-9"
-            alt="Logotipo que possui uma imagem em forma de M e a palavra metha"
+            className="md:cursor-pointer h-14"
+            alt="AM Basketball"
           />
 
           <div
@@ -32,6 +33,7 @@ export default function Navbar() {
         <ul className="md:flex hidden items-center gap-8">
           <NavLinkList />
         </ul>
+        <RedirectButton path="" text="Fale comigo" />
         {/* Mobile nav */}
         <ul
           className={`

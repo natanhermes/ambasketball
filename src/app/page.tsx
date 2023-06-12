@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <>
       <ConnectContainer />
-      <ServicesList />
-      <ContactContainer />
-      <Footer />
+      {/* <ServicesList /> */}
+      {/* <ContactContainer /> */}
+      {/* <Footer /> */}
     </>
   );
 }

@@ -2,6 +2,7 @@ import './globals.css';
 import { Roboto } from 'next/font/google';
 
 import Navbar from '@/components/Navbar';
+import 'react-slideshow-image/dist/styles.css';
 
 const roboto = Roboto({
   weight: ['400', '500', '900'],
@@ -18,13 +19,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // bg-[url('../../public/images/am-team/video.mp4')] bg-no-repeat bg-cover
   return (
     <html lang="pt-BR" className="scroll-smooth">
       <link rel="icon" href="/images/favicon.ico" />
-      <body className={roboto.className}>
-        <main className="bg-black h-full screen flex flex-col items-center p-4 lg:px-16 2xl:px-32">
+      <body className={`${roboto.className} bg-black`}>
+        <main className="h-screen screen flex flex-col items-center p-4 lg:px-16 2xl:px-32">
           <Navbar />
-          <div className="w-full">{children}</div>
+          <div className="w-full h-full">{children}</div>
         </main>
       </body>
     </html>
