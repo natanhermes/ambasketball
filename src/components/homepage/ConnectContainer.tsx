@@ -21,6 +21,7 @@ import amTeam17 from '../../../public/images/am-team/am-team-17.jpg';
 import amTeam18 from '../../../public/images/am-team/am-team-18.jpg';
 import amTeam19 from '../../../public/images/am-team/am-team-19.jpg';
 import amTeam20 from '../../../public/images/am-team/am-team-20.jpg';
+import Slider from '../Slider';
 
 const amTeamImages = [
   amTeam1,
@@ -44,22 +45,9 @@ const amTeamImages = [
 
 export function ConnectContainer() {
   return (
-    <div className="flex flex-col md:flex-row w-full h-full items-center justify-around">
-      <div className="w-2/4">
-        <Zoom scale={0.4} duration={1000} arrows={false} pauseOnHover={false}>
-          {amTeamImages.map((each, index) => (
-            // <img key={index} style={{ width: '100%' }} src={each} />
-            <Image
-              key={index}
-              style={{ borderRadius: '50%' }}
-              src={each}
-              priority
-              width={500}
-              height={500}
-              alt="AM Team"
-            />
-          ))}
-        </Zoom>
+    <div className="flex flex-col md:flex-row w-full h-full mt-8 justify-around">
+      <div className="w-2/4 px-4">
+        <Slider items={amTeamImages} />
       </div>
       <div>
         <p className="text-lg md:text-5xl w-[40rem] text-icons">
@@ -67,7 +55,7 @@ export function ConnectContainer() {
           <span className="text-primary">AM Basketball</span>.
         </p>
 
-        <p className="text-lg md:text-sm w-[40rem] mt-4 text-gray-600">
+        <p className="text-lg md:text-sm w-[40rem] mt-4 text-gray-400">
           O acampamento mediado pela AM Basketball é uma experiência única e
           transformadora para jovens jogadores de basquete. Com uma abordagem
           abrangente e especializada, a AM Basketball proporciona um ambiente
@@ -77,7 +65,10 @@ export function ConnectContainer() {
         </p>
 
         <div className="mt-4 flex items-center cursor-pointer gap-2 text-icons hover:text-primary">
-          <ArrowRightCircleIcon className="h-6" /> <span>Saiba mais sobre</span>
+          <a href="#aboutSection" className="flex flex-row gap-2">
+            <ArrowRightCircleIcon className="h-6" />{' '}
+            <span>Saiba mais sobre</span>
+          </a>
         </div>
       </div>
     </div>

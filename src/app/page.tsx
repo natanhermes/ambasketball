@@ -1,15 +1,13 @@
-import { ServicesList } from '@/components/homepage/ServicesList';
 import { ConnectContainer } from '@/components/homepage/ConnectContainer';
-import { ContactContainer } from '@/components/homepage/ContactContainer';
+import { AboutContainer } from '@/components/homepage/AboutContainer';
 import { Footer } from '@/components/Footer';
 
 export default function Home() {
   return (
     <>
       <ConnectContainer />
-      {/* <ServicesList /> */}
-      {/* <ContactContainer /> */}
-      {/* <Footer /> */}
+      <AboutContainer />
+      <Footer />
     </>
   );
 }

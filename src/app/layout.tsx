@@ -19,12 +19,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // bg-[url('../../public/images/am-team/video.mp4')] bg-no-repeat bg-cover
   return (
     <html lang="pt-BR" className="scroll-smooth">
       <link rel="icon" href="/images/favicon.ico" />
       <body className={`${roboto.className} bg-black`}>
-        <main className="h-screen screen flex flex-col items-center p-4 lg:px-16 2xl:px-32">
+        <main className="h-screen screen flex flex-col items-center p-4 pt-0 lg:px-16 2xl:px-32">
           <Navbar />
           <div className="w-full h-full">{children}</div>
         </main>

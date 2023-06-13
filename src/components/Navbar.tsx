@@ -8,13 +8,13 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   return (
     <nav className="bg-transparent w-full">
-      <div className="bg-transparent flex items-center font-medium justify-between">
+      <div className="bg-transparent flex items-center font-medium justify-between p-4">
         <div
           id="logo-container"
           className="bg-transparent z-50 md:w-auto w-full flex justify-between"
         >
           <img
-            src="/images/ambasketball-logotipo.svg"
+            src="/images/am-basketball.svg"
             className="md:cursor-pointer h-14"
             alt="AM Basketball"
           />
@@ -33,7 +33,7 @@ export default function Navbar() {
         <ul className="md:flex hidden items-center gap-8">
           <NavLinkList />
         </ul>
-        <RedirectButton path="" text="Fale comigo" />
+        <RedirectButton path="" text="Preencher formulário" />
         {/* Mobile nav */}
         <ul
           className={`

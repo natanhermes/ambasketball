@@ -4,7 +4,7 @@ import { FaFacebookF, FaInstagram, FaYoutube } from 'react-icons/fa';
 
 export function Footer() {
   return (
-    <>
+    <div className=" mt-32 bg-transparent bg-opacity-50">
       <div className="flex flex-col gap-8">
         <div className="flex flex-row justify-between">
           <span className="text-primary text-sm">Siga-nos</span>
@@ -41,6 +41,6 @@ export function Footer() {
           <BsArrowUp size={24} className="text-[#DCC8FF]" />
         </div>
       </div>
-    </>
+    </div>
   );
 }

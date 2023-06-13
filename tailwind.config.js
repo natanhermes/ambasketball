@@ -14,5 +14,5 @@ module.exports = {
       fontFamily: 'Roboto'
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/aspect-ratio")],
 }
