@@ -1,12 +1,11 @@
 import Image from 'next/image';
-import iamtudao from '../../../public/images/am-team/am-team-10.jpg';
-import { ButtonScroll } from '../ButtonScrollWindow';
+import iamtudao from '../../../public/images/am-team/am-team-8.jpg';
 
 export function AboutContainer() {
   return (
     <>
       <div
-        className="flex flex-col md:flex-row w-full h-full items-center justify-around"
+        className="flex flex-col md:flex-row w-full py-20 items-center justify-around"
         id="aboutSection"
       >
         <div>
@@ -28,7 +27,7 @@ export function AboutContainer() {
             O camp é cuidadosamente planejado e estruturado para fornecer uma
             combinação equilibrada de treinamento intensivo, jogos competitivos
             e atividades educacionais. Os participantes são orientados pelo{' '}
-            <a href="https://www.instagram.com/iamtudao">
+            <a href="https://www.instagram.com/iamtudao" target="_blank">
               <span className="text-primary cursor-pointer">
                 Arthur de Melo
               </span>
@@ -64,7 +63,7 @@ export function AboutContainer() {
         </div>
 
         <div className="w-2/4 px-4">
-          <div className="aspect-w-4 aspect-h-6">
+          <div className="aspect-w-4 aspect-h-4">
             <Image
               src={iamtudao}
               priority

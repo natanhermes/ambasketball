@@ -49,7 +49,7 @@ export default function Slider({ items }: any) {
 
   return (
     <div ref={slideRef} className="w-full select-none relative">
-      <div className="aspect-w-10 aspect-h-9">
+      <div className="aspect-w-8 aspect-h-6">
         <Image
           key={currentIndex}
           src={items[currentIndex]}

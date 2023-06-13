@@ -33,7 +33,7 @@ export default function Navbar() {
         <ul className="md:flex hidden items-center gap-8">
           <NavLinkList />
         </ul>
-        <RedirectButton path="" text="Preencher formulário" />
+        <RedirectButton path="/form" text="Preencher formulário" />
         {/* Mobile nav */}
         <ul
           className={`

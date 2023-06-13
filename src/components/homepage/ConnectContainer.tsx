@@ -1,8 +1,5 @@
 'use client';
 import { ArrowRightCircleIcon } from '@heroicons/react/24/outline';
-import { FlexRowColStack } from '../FlexRowColStack';
-import { Fade, Zoom } from 'react-slideshow-image';
-import Image from 'next/image';
 
 import amTeam1 from '../../../public/images/am-team/am-team-1.jpg';
 import amTeam2 from '../../../public/images/am-team/am-team-2.jpg';
@@ -45,7 +42,10 @@ const amTeamImages = [
 
 export function ConnectContainer() {
   return (
-    <div className="flex flex-col md:flex-row w-full h-full mt-8 justify-around">
+    <div
+      id="connectSection"
+      className="flex flex-col md:flex-row w-full py-40 justify-around"
+    >
       <div className="w-2/4 px-4">
         <Slider items={amTeamImages} />
       </div>
@@ -55,7 +55,7 @@ export function ConnectContainer() {
           <span className="text-primary">AM Basketball</span>.
         </p>
 
-        <p className="text-lg md:text-sm w-[40rem] mt-4 text-gray-400">
+        <p className="text-lg w-[40rem] mt-4 text-gray-400">
           O acampamento mediado pela AM Basketball é uma experiência única e
           transformadora para jovens jogadores de basquete. Com uma abordagem
           abrangente e especializada, a AM Basketball proporciona um ambiente
@@ -65,7 +65,7 @@ export function ConnectContainer() {
         </p>
 
         <div className="mt-4 flex items-center cursor-pointer gap-2 text-icons hover:text-primary">
-          <a href="#aboutSection" className="flex flex-row gap-2">
+          <a href="/about" className="flex flex-row gap-2">
             <ArrowRightCircleIcon className="h-6" />{' '}
             <span>Saiba mais sobre</span>
           </a>

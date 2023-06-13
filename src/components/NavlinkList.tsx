@@ -5,7 +5,6 @@ export function NavLinkList() {
     <>
       <NavLink path="/" label="INÍCIO" />
       <NavLink path="/about" label="SOBRE" />
-      <NavLink path="/contact" label="CONTATO" />
     </>
   );
 }

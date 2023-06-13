@@ -1,10 +1,11 @@
 'use client';
 import { BsArrowUp } from 'react-icons/bs';
-import { FaFacebookF, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
+import Image from 'next/image';
 
 export function Footer() {
   return (
-    <div className=" mt-32 bg-transparent bg-opacity-50">
+    <div className="w-full mt-32 bg-transparent bg-opacity-50">
       <div className="flex flex-col gap-8">
         <div className="flex flex-row justify-between">
           <span className="text-primary text-sm">Siga-nos</span>
@@ -13,14 +14,8 @@ export function Footer() {
 
         <div className="flex flex-row justify-between items-center">
           <div className="flex flex-row gap-2">
-            <a href="https://www.youtube.com" target="_blank">
-              <FaYoutube size={12} className="text-icons cursor-pointer" />
-            </a>
-            <a href="https://www.instagram.com/oficialmetha" target="_blank">
-              <FaInstagram size={12} className="text-icons cursor-pointer" />
-            </a>
-            <a href="https://www.facebook.com" target="_blank">
-              <FaFacebookF size={12} className="text-icons cursor-pointer" />
+            <a href="https://www.instagram.com/ambasketball__" target="_blank">
+              <FaInstagram size={24} className="text-icons cursor-pointer" />
             </a>
           </div>
           <span className="text-icons text-xs">
@@ -38,8 +33,26 @@ export function Footer() {
             })
           }
         >
-          <BsArrowUp size={24} className="text-[#DCC8FF]" />
+          <BsArrowUp size={24} className="text-[#dedbe3]" />
         </div>
+      </div>
+      <div className="w-full mt-16 py-8 flex justify-center">
+        <span className="text-icons text-[0.5rem] flex flex-row gap-2 items-center">
+          Desenvolvido por{' '}
+          <a
+            href="https://www.methadigital.com/"
+            target="_blank"
+            className="text-metha"
+          >
+            <Image
+              src={require('../../public/images/metha-digital-logo-retrato.svg')}
+              alt=""
+              priority
+              width={150}
+              height={150}
+            />
+          </a>
+        </span>
       </div>
     </div>
   );

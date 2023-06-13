@@ -2,7 +2,9 @@ import './globals.css';
 import { Roboto } from 'next/font/google';
 
 import Navbar from '@/components/Navbar';
+
 import 'react-slideshow-image/dist/styles.css';
+import { Footer } from '@/components/Footer';
 
 const roboto = Roboto({
   weight: ['400', '500', '900'],
@@ -26,6 +28,7 @@ export default function RootLayout({
         <main className="h-screen screen flex flex-col items-center p-4 pt-0 lg:px-16 2xl:px-32">
           <Navbar />
           <div className="w-full h-full">{children}</div>
+          <Footer />
         </main>
       </body>
     </html>

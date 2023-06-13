@@ -1,11 +1,9 @@
-import { DescriptionContainer } from '@/components/aboutpage/DescriptionContainer';
-import { SocialMediaContainer } from '@/components/aboutpage/SocialMediaContainer';
+import { AboutContainer } from '@/components/homepage/AboutContainer';
 
-export default function About() {
+export default function AboutPage() {
   return (
     <>
-      <DescriptionContainer />
-      <SocialMediaContainer />
+      <AboutContainer />
     </>
   );
 }
