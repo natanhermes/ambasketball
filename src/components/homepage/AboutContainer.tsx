@@ -5,16 +5,16 @@ export function AboutContainer() {
   return (
     <>
       <div
-        className="flex flex-col md:flex-row w-full py-20 items-center justify-around"
+        className="flex flex-col md:flex-row w-full py-4 items-center justify-around"
         id="aboutSection"
       >
         <div>
-          <p className="text-lg md:text-5xl w-[40rem] text-icons">
+          <p className="text-lg md:text-2xl md:leading-[3.5rem] w-[40rem] text-icons">
             Mais inforamções sobre o camp{' '}
             <span className="text-primary">AM Basketball</span>.
           </p>
 
-          <p className="text-lg md:text-sm w-[40rem] mt-4 text-gray-400">
+          <p className="text-lg md:text-sm w-[40rem] text-gray-400">
             O acampamento é uma experiência única e transformadora para jovens
             jogadores de basquete. Com uma abordagem abrangente e especializada,
             a AM Basketball proporciona um ambiente dinâmico e envolvente, onde
