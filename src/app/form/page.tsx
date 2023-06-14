@@ -124,9 +124,9 @@ export default function FormPage() {
               className="h-full w-full rounded-[3rem] border-transparent border-[2px] bg-gray-600 text-icons opacity-80 p-2 hover:outline-none hover:border-primary focus:outline-none focus:border-primary"
             >
               <option value="">Selecione uma opção</option>
-              <option value="lessThan1">Menos de 1 ano</option>
-              <option value="between1and2">De 1 a 2 anos</option>
-              <option value="moreThan2">Mais de 2 anos</option>
+              <option value="Menos de 1 ano">Menos de 1 ano</option>
+              <option value="De 1 a 2 anos">De 1 a 2 anos</option>
+              <option value="Mais de 2 anos">Mais de 2 anos</option>
             </select>
             {!!errors.howTimePlaying && (
               <span className="text-xs text-red-600">
@@ -144,11 +144,11 @@ export default function FormPage() {
               className="h-full w-full rounded-[3rem] border-transparent border-[2px] bg-gray-600 text-icons opacity-80 p-2 hover:outline-none hover:border-primary focus:outline-none focus:border-primary"
             >
               <option value="">Selecione uma opção</option>
-              <option value="pointGuard">Armador</option>
-              <option value="shootingGuard">Ala-Armador</option>
-              <option value="smallForward">Ala</option>
-              <option value="powerForward">Ala-Pivô</option>
-              <option value="center">Pivô</option>
+              <option value="Armador">Armador</option>
+              <option value="Ala-Armador">Ala-Armador</option>
+              <option value="Ala">Ala</option>
+              <option value="Ala-Pivô">Ala-Pivô</option>
+              <option value="Pivô">Pivô</option>
             </select>
             {!!errors.whichPosition && (
               <span className="text-xs text-red-600">
