@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import { NavLinkList } from './NavlinkList';
 import { RedirectButton } from './RedirectButton';
+import Image from 'next/image';
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -13,9 +14,11 @@ export default function Navbar() {
           id="logo-container"
           className="bg-transparent z-50 md:w-auto w-full flex justify-between"
         >
-          <img
+          <Image
             src="/images/am-basketball.svg"
-            className="md:cursor-pointer h-14"
+            className="md:cursor-pointer"
+            width={120}
+            height={120}
             alt="AM Basketball"
           />
 

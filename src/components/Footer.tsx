@@ -14,7 +14,11 @@ export function Footer() {
 
         <div className="flex flex-row justify-between items-center">
           <div className="flex flex-row gap-2">
-            <a href="https://www.instagram.com/ambasketball__" target="_blank">
+            <a
+              href="https://www.instagram.com/ambasketball__"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaInstagram size={24} className="text-icons cursor-pointer" />
             </a>
           </div>
@@ -42,6 +46,7 @@ export function Footer() {
           <a
             href="https://www.methadigital.com/"
             target="_blank"
+            rel="noreferrer"
             className="text-metha"
           >
             <Image

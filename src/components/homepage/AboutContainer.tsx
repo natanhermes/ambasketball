@@ -27,7 +27,11 @@ export function AboutContainer() {
             O camp é cuidadosamente planejado e estruturado para fornecer uma
             combinação equilibrada de treinamento intensivo, jogos competitivos
             e atividades educacionais. Os participantes são orientados pelo{' '}
-            <a href="https://www.instagram.com/iamtudao" target="_blank">
+            <a
+              href="https://www.instagram.com/iamtudao"
+              target="_blank"
+              rel="noreferrer"
+            >
               <span className="text-primary cursor-pointer">
                 Arthur de Melo
               </span>
