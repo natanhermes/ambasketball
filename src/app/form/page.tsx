@@ -33,17 +33,22 @@ export default function FormPage() {
   return (
     <div className="flex flex-col md:flex-row w-full justify-around">
       <div>
-        <p className="text-lg md:text-2xl md:leading-[3.5rem] w-[40rem] text-icons">
-          Preencha os dados para participar do{' '}
-          <span className="text-primary">Camp AM Basketball</span>.
+        <p className="text-xl md:text-2xl md:w-[40rem] text-icons md:flex flex-col">
+          Preencha os dados para participar do camp{' '}
+          <span>
+            <span className="text-primary">
+              <b>AM Basketball</b>
+            </span>
+            .
+          </span>
         </p>
 
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex w-full flex-col gap-4"
+          className="flex w-full flex-col gap-4 pt-4"
         >
           <div className="flex flex-col">
-            <label htmlFor="" className="text-icons">
+            <label htmlFor="" className="text-icons text-sm">
               Nome:
             </label>
             <input
@@ -59,7 +64,7 @@ export default function FormPage() {
             )}
           </div>
           <div className="flex flex-col">
-            <label htmlFor="" className="text-icons">
+            <label htmlFor="" className="text-icons text-sm">
               E-mail:
             </label>
             <input
@@ -76,7 +81,7 @@ export default function FormPage() {
           </div>
           <div className="flex flex-row justify-between gap-6">
             <div className="flex flex-col w-full">
-              <label htmlFor="" className="text-icons">
+              <label htmlFor="" className="text-icons text-sm">
                 Idade:
               </label>
               <input
@@ -92,7 +97,7 @@ export default function FormPage() {
               )}
             </div>
             <div className="flex flex-col w-full">
-              <label htmlFor="" className="text-icons">
+              <label htmlFor="" className="text-icons text-sm">
                 WhatsApp:
               </label>
               <InputMask
@@ -110,7 +115,7 @@ export default function FormPage() {
             </div>
           </div>
           <div className="flex flex-col w-full">
-            <label htmlFor="howTimePlaying" className="text-icons">
+            <label htmlFor="howTimePlaying" className="text-icons text-sm">
               Há quanto tempo joga basquete?
             </label>
             <select
@@ -130,7 +135,7 @@ export default function FormPage() {
             )}
           </div>
           <div className="flex flex-col w-full">
-            <label htmlFor="whichPosition" className="text-icons">
+            <label htmlFor="whichPosition" className="text-icons text-sm">
               Qual posição você joga?
             </label>
             <select
@@ -152,7 +157,7 @@ export default function FormPage() {
             )}
           </div>
           <div className="flex flex-col w-full">
-            <label htmlFor="" className="text-icons">
+            <label htmlFor="" className="text-icons text-sm">
               Onde você joga? (Clube/Escola/Rachão):
             </label>
             <input
@@ -168,7 +173,7 @@ export default function FormPage() {
             )}
           </div>
           <div className="flex flex-col w-full">
-            <label htmlFor="" className="text-icons">
+            <label htmlFor="" className="text-icons text-sm">
               Seu objetivo após finalizar o camp:
             </label>
             <textarea

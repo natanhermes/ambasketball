@@ -27,8 +27,10 @@ export default function RootLayout({
       <body className={`${roboto.className} bg-black`}>
         <main className="h-screen screen flex flex-col items-center p-4 pt-0 lg:px-16 2xl:px-32">
           <Navbar />
-          <div className="w-full h-full">{children}</div>
-          <Footer />
+          <div className="w-full h-screen">
+            {children}
+            <Footer />
+          </div>
         </main>
       </body>
     </html>

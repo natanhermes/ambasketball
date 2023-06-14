@@ -57,7 +57,7 @@ export default function Slider({ items }: any) {
 
   return (
     <div ref={slideRef} className="w-full select-none relative">
-      <div className="aspect-w-8 aspect-h-6">
+      <div className="aspect-w-8 aspect-h-7">
         <Image
           key={currentIndex}
           src={items[currentIndex]}
@@ -70,13 +70,13 @@ export default function Slider({ items }: any) {
 
       <div className="absolute w-full top-1/2 transform -translate-y-1/2 px-3 flex justify-between items-center">
         <button
-          className="bg-black text-white p-1 rounded-full bg-opacity-50 cursor-pointer hover:bg-opacity-100 transition"
+          className="bg-black text-primary text-opacity-70 p-1 rounded-full bg-opacity-20 cursor-pointer hover:bg-opacity-100 transition"
           onClick={handleOnPrevClick}
         >
           <AiOutlineVerticalRight size={30} />
         </button>
         <button
-          className="bg-black text-white p-1 rounded-full bg-opacity-50 cursor-pointer hover:bg-opacity-100 transition"
+          className="bg-black text-primary text-opacity-70 p-1 rounded-full bg-opacity-20 cursor-pointer hover:bg-opacity-100 transition"
           onClick={handleOnNextClick}
         >
           <AiOutlineVerticalLeft size={30} />

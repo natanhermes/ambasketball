@@ -1,10 +1,14 @@
 import { NavLink } from './Navlink';
 
-export function NavLinkList() {
+interface NavLinkListProps {
+  onClickItem?: () => void;
+}
+
+export function NavLinkList({ onClickItem }: NavLinkListProps) {
   return (
     <>
-      <NavLink path="/" label="INÍCIO" />
-      <NavLink path="/about" label="SOBRE" />
+      <NavLink path="/" label="INÍCIO" onClick={onClickItem} />
+      <NavLink path="/about" label="SOBRE" onClick={onClickItem} />
     </>
   );
 }

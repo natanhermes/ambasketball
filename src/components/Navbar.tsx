@@ -9,7 +9,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   return (
     <nav className="bg-transparent w-full">
-      <div className="bg-transparent flex items-center font-medium justify-between p-4">
+      <div className="bg-transparent flex items-center font-medium justify-between py-4">
         <div
           id="logo-container"
           className="bg-transparent z-50 md:w-auto w-full flex justify-between"
@@ -36,15 +36,24 @@ export default function Navbar() {
         <ul className="md:flex hidden items-center gap-8">
           <NavLinkList />
         </ul>
-        <RedirectButton path="/form" text="Preencher formulário" />
+        <RedirectButton
+          path="/form"
+          text="Preencher formulário"
+          className="hidden md:flex"
+        />
         {/* Mobile nav */}
         <ul
           className={`
-            md:hidden bg-black fixed w-full top-0 overflow-y-hidden bottom-0 py-20 pl-4
+            z-10 md:hidden bg-black fixed w-full top-0 overflow-y-hidden bottom-0 py-20 pl-4
             duration-500 ${open ? 'left-0' : 'left-[-100%]'}
             `}
         >
-          <NavLinkList />
+          <NavLinkList onClickItem={() => setOpen(!open)} />
+          <RedirectButton
+            path="/form"
+            text="Preencher formulário"
+            onClick={() => setOpen(!open)}
+          />
         </ul>
       </div>
     </nav>

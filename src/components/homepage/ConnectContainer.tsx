@@ -44,18 +44,18 @@ export function ConnectContainer() {
   return (
     <div
       id="connectSection"
-      className="flex flex-col md:flex-row w-full py-20 justify-around"
+      className="flex flex-col xl:flex-row w-full py-4 justify-around"
     >
-      <div className="w-2/4 px-4">
+      <div className="w-4/4 xl:w-2/4">
         <Slider items={amTeamImages} />
       </div>
-      <div>
-        <p className="text-lg md:text-5xl w-[40rem] text-icons">
-          Venha viver uma experiência inesquecível com o camp da{' '}
-          <span className="text-primary">AM Basketball</span>.
+      <div className="pt-8">
+        <p className="text-xl md:text-5xl md:w-[40rem] text-icons flex flex-col">
+          Venha viver uma experiência inesquecível com o camp da
+          <span className="text-primary">AM Basketball.</span>
         </p>
 
-        <p className="text-lg w-[40rem] mt-4 text-gray-400">
+        <p className="text-base md:w-[40rem] mt-4 text-gray-400">
           O acampamento mediado pela AM Basketball é uma experiência única e
           transformadora para jovens jogadores de basquete. Com uma abordagem
           abrangente e especializada, a AM Basketball proporciona um ambiente

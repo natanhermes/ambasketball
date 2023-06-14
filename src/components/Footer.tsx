@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export function Footer() {
   return (
-    <div className="w-full mt-32 bg-transparent bg-opacity-50">
+    <div className="w-full pt-32 bg-transparent bg-opacity-50">
       <div className="flex flex-col gap-8">
         <div className="flex flex-row justify-between">
           <span className="text-primary text-sm">Siga-nos</span>
@@ -27,7 +27,7 @@ export function Footer() {
           </span>
         </div>
       </div>
-      <div className="w-full mt-16 flex justify-end">
+      <div className="w-full pt-12 flex justify-end">
         <div
           className="p-2 bg-primary cursor-pointer rounded-sm hover:bg-opacity-90"
           onClick={() =>
@@ -40,7 +40,7 @@ export function Footer() {
           <BsArrowUp size={24} className="text-[#dedbe3]" />
         </div>
       </div>
-      <div className="w-full mt-16 py-8 flex justify-center">
+      <div className="w-full py-12 flex justify-center">
         <span className="text-icons text-[0.5rem] flex flex-row gap-2 items-center">
           Desenvolvido por{' '}
           <a
