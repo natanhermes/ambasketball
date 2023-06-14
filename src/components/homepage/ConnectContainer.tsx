@@ -44,7 +44,7 @@ export function ConnectContainer() {
   return (
     <div
       id="connectSection"
-      className="flex flex-col xl:flex-row w-full py-4 justify-around"
+      className="flex flex-col xl:flex-row w-full py-4 gap-4 justify-around"
     >
       <div className="w-4/4 xl:w-2/4">
         <Slider items={amTeamImages} />
