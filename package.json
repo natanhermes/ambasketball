@@ -16,8 +16,10 @@
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
     "autoprefixer": "10.4.14",
+    "axios": "^1.4.0",
     "eslint-config-next": "13.4.1",
     "next": "13.4.1",
+    "nodemailer": "^6.9.3",
     "postcss": "8.4.23",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -31,6 +33,7 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
+    "@types/nodemailer": "^6.4.8",
     "@types/react-input-mask": "^3.0.2",
     "@typescript-eslint/eslint-plugin": "^5.59.11",
     "@typescript-eslint/parser": "^5.59.11",
