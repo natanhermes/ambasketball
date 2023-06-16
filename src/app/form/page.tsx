@@ -76,7 +76,7 @@ export default function FormPage() {
     <div className="flex flex-col md:flex-row w-full justify-around">
       {loading ? (
         <Spinner />
-      ) : registered ? (
+      ) : true ? (
         <Toast />
       ) : (
         <div>
