@@ -6,7 +6,7 @@ interface SendMailProps {
   text: string;
 }
 
-export const sendEmail = async ({to, subject, text}: SendMailProps) => {
+export const sendEmail = async ({ to, subject, text }: SendMailProps) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -25,12 +25,12 @@ export const sendEmail = async ({to, subject, text}: SendMailProps) => {
 
     const info = await transporter.sendMail(mailOptions);
     return {
-      kind: "ok",
+      kind: 'ok',
       info,
     };
   } catch (error) {
     return {
-      kind: "error",
+      kind: 'error',
       error,
     };
   }
