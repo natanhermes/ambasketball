@@ -68,8 +68,8 @@ export default function FormPage() {
 
       setTimeout(() => {
         router.push('/registered');
+        setRegistered(false);
       }, 2000);
-      setRegistered(false);
     }
   };
   return (
