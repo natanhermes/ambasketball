@@ -7,7 +7,7 @@ export async function POST(req: Request) {
     const response = await sendEmail({
       to: body.to,
       subject: body.subject,
-      text: body.text,
+      html: body.text,
     });
     if (!response.info?.response.includes('OK')) {
       throw new Error('E-mail não enviado!');
