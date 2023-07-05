@@ -47,7 +47,7 @@ export default function FormPage() {
     });
     setLoading(true);
     const res = await api.post('/mail', {
-      to: 'arthur@ambasketball.com.br',
+      to: 'contato.arthurdemelo@gmail.com',
       subject: 'Inscrição - AM Basketball',
       text: `
       <p>Nome: ${data.name}</p>
