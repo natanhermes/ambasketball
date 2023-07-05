@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import iamtudao from '../../../public/images/am-team/am-team-8.jpg';
+import Link from 'next/link';
 
 export function AboutContainer() {
   return (
@@ -18,20 +19,15 @@ export function AboutContainer() {
               .
             </span>
           </p>
-
           <p className="text-base md:text-sm lg:max-w-[30rem] text-gray-400">
-            O acampamento é uma experiência única e transformadora para jovens
-            jogadores de basquete. Com uma abordagem abrangente e especializada,
-            a AM Basketball proporciona um ambiente dinâmico e envolvente, onde
-            os participantes têm a oportunidade de aprimorar suas habilidades
-            técnicas, aprofundar seu conhecimento tático e desenvolver uma
-            mentalidade vencedora.
+            O Camp AM Basketball é planejado e estruturado para fornecer uma
+            combinação equilibrada de treinamento da técnica individual, tomada
+            de decisão, conhecimento tático, desenvolvimento da autoconfiança e
+            jogos competitivos.
           </p>
 
           <p className="text-base md:text-sm lg:max-w-[30rem] text-gray-400">
-            O camp é cuidadosamente planejado e estruturado para fornecer uma
-            combinação equilibrada de treinamento intensivo, jogos competitivos
-            e atividades educacionais. Os participantes são orientados pelo{' '}
+            Os participantes serão orientados pelo Coach{' '}
             <a
               href="https://www.instagram.com/iamtudao"
               target="_blank"
@@ -40,34 +36,31 @@ export function AboutContainer() {
               <span className="text-primary cursor-pointer">
                 <b>Arthur de Melo</b>
               </span>
-              .
             </a>
+            , Personal Trainer de Basquete e Técnico do Desportivo Rio Grande.
           </p>
 
           <p className="text-base md:text-sm lg:max-w-[30rem] text-gray-400">
-            Durante o acampamento, os jogadores são expostos a uma variedade de
-            exercícios e treinamentos que visam aprimorar suas habilidades
-            individuais, como dribles, arremessos, passes, defesa e movimentação
-            sem a bola. Além disso, são oferecidas sessões de treinamento em
-            grupo, onde os participantes aprendem a importância do trabalho em
-            equipe, comunicação eficaz e estratégias de jogo.
+            Durante o final de semana, esses serão os conteúdos abordados:
+            <br />
+            <span className="text-primary">1° dia:</span> Controle de bola,
+            finalização e passo zero.
+            <br />
+            <span className="text-primary">2° dia:</span> Leitura de
+            Pick-and-Roll, finalização e passes.
           </p>
 
           <p className="text-base md:text-sm lg:max-w-[30rem] text-gray-400">
-            Durante o acampamento, os jogadores são expostos a uma variedade de
-            exercícios e treinamentos que visam aprimorar suas habilidades
-            individuais, como dribles, arremessos, passes, defesa e movimentação
-            sem a bola. Além disso, são oferecidas sessões de treinamento em
-            grupo, onde os participantes aprendem a importância do trabalho em
-            equipe, comunicação eficaz e estratégias de jogo.
+            Estamos torcendo para ter a sua presença no Camp.
           </p>
-
           <p className="text-base md:text-sm lg:max-w-[30rem] text-gray-400">
-            A AM Basketball também enfatiza o desenvolvimento da mentalidade e
-            mentalidade vencedora dos jogadores. São realizadas sessões de
-            treinamento mental, palestras inspiradoras e discussões em grupo
-            para ajudar os participantes a superar desafios, desenvolver
-            resiliência e construir confiança em si mesmos.
+            <Link href="/form">
+              <span className="text-primary">Clique aqui</span>
+            </Link>{' '}
+            para ir para a aba de inscrição.
+          </p>
+          <p className="text-base md:text-sm lg:max-w-[30rem] text-gray-400">
+            Nos vemos em breve!
           </p>
         </div>
 

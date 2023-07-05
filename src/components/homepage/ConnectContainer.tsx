@@ -19,6 +19,7 @@ import amTeam18 from '../../../public/images/am-team/am-team-18.jpg';
 import amTeam19 from '../../../public/images/am-team/am-team-19.jpg';
 import amTeam20 from '../../../public/images/am-team/am-team-20.jpg';
 import Slider from '../Slider';
+import Link from 'next/link';
 
 const amTeamImages = [
   amTeam1,
@@ -56,19 +57,16 @@ export function ConnectContainer() {
         </p>
 
         <p className="text-base md:w-[40rem] mt-4 text-gray-400">
-          O acampamento mediado pela AM Basketball é uma experiência única e
-          transformadora para jovens jogadores de basquete. Com uma abordagem
-          abrangente e especializada, a AM Basketball proporciona um ambiente
-          dinâmico e envolvente, onde os participantes têm a oportunidade de
-          aprimorar suas habilidades técnicas, aprofundar seu conhecimento
-          tático e desenvolver uma mentalidade vencedora.
+          O Camp é uma experiência única para jovens jogadores de basquete.
+          Abordando alguns aspectos do jogo, a AM Basketball proporciona treinos
+          dinâmicos, buscando a evolução do basquete de seus participantes.{' '}
         </p>
 
         <div className="mt-4 flex items-center cursor-pointer gap-2 text-icons hover:text-primary">
-          <a href="/about" className="flex flex-row gap-2">
+          <Link href="/about" className="flex flex-row gap-2">
             <ArrowRightCircleIcon className="h-6" />{' '}
             <span>Saiba mais sobre</span>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
